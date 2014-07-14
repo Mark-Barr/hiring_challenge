@@ -5,7 +5,7 @@ This repository contains all of the information you should need to get started o
 
 # goal
 
-The goal of this challenge to create two simple applications.  We're trying to make it so these don't take more than an hour or two, depending on you're experience and how far you're willing to take it.
+The goal of this challenge to create two simple applications.  We're trying to make it so these don't take more than an hour or two (an afternoon, max), depending on your experience and how far you're willing to take it.
 
 # simple api application
 
@@ -13,11 +13,11 @@ The first of the two applications you should create is an api which serves the d
 
 Ideally, you will create an api which can accessed by a remote application that provides access on a semi-atomic level to the synthetic population found within the data files.
 
-For more information on the dataset, please look [here](https://www.epimodels.org/midas/Rpubsyntdata1.do).  In particular, this is the 2010 version 1 U.S. synthesized population of Arkansas.
+For more information on the dataset, please look [here](https://www.epimodels.org/midas/Rpubsyntdata1.do).  In particular, this is the 2010 Version 1 U.S. synthesized population of Arkansas.
 
 # simple consumer application
 
-The second application should consume the data provided by the other application, and doing something interesting with it.  It should save the data in some sort of permanant data store (like a SQL DB), and display something.  (We'll leave the something up to you, but it could be a simple web application that displays the data in a table, or a force directed graph relating various entities together.  Use your imagination!)
+The second application should consume the data provided by the other application, and do something interesting with it.  It should save the data in some sort of permanant data store (like a SQL DB), and display something.  (We'll leave the something up to you, but it could be a simple web application that displays the data in a table, or a force directed graph relating various entities together.  Use your imagination!)
 
 # need help?
 
@@ -27,7 +27,10 @@ Feel free to contact myself (jhanna[at]uams.edu) if you have any questions or ne
 
 Additonally, I'd like you to answer a few questions.
 
-TODO
+1. Why did you chose the technology stack you chose (language, data store, etc)?
+2. Did you seriously consider another stack?  If so, roughly how would it have worked?  If not, why not?
+3. Suppose for a second the toy application you've built needed to scale up.  What might you change to accommodate a huge influx of users?  What about a significantly larger amount of data?
+4. Finally, I'd like to test your Google skills.  What's the idiomatic way to slurp in file contents in Haskell?  What about Golang?
 
 # getting started
 
