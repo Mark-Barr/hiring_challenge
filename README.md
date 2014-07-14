@@ -36,4 +36,4 @@ Additonally, I'd like you to answer a few questions.
 
 First, fork this repository.  Github has a lot of learning resources if you're not familiar with it; please take advantage of them if you don't already know how to do this.  Second, write the two applications, reaching out to me as necessary.  Third, answer the questions in the previous section by editing the readme.  Fourth, submit a pull request to this repository whenever you feel confortable with what you've created.
 
-Remember, we're looking to find out how you work through a problem.  This doesn't have to be your magnum opus, or some sort of magical masterpiece.  
+Remember, we're looking to find out how you work through a problem.  This doesn't have to be your magnum opus, or some sort of magical masterpiece.  Have fun, and do something interesting!
