@@ -5,19 +5,19 @@ This repository contains all of the information you should need to get started o
 
 # goal
 
-The goal of this challenge to create two simple applications.  We're trying to make it so these don't take more than an hour or two (an afternoon, max), depending on your experience and how far you're willing to take it.
+The goal of this challenge to create two simple applications.  We're trying to make it so these don't take more than an hour or two (an afternoon, max), depending on your experience and how far you're willing to take it.  
+
+We're purposely keeping the specification simple and open, giving you the ability to demonstrate how you think through a problem.
 
 # simple api application
 
-The first of the two applications you should create is an api which serves the data found in the `data` folder in the repository.  We're purposely keeping the specification simple and open, giving you the ability to demonstrate how you think through a problem.
-
-Ideally, you will create an api which can accessed by a remote application that provides access on a semi-atomic level to the synthetic population found within the data files.
+The first of the two applications you should create is an api which serves the data found in the `data` folder in the repository.  Ideally, you will create an api which can accessed by a remote application that provides access on a semi-atomic level to the synthetic population found within the data files.  You should slurp the files into some permanent data store (like a SQL DB), and serve the information from there rather than directly from the files.
 
 For more information on the dataset, please look [here](https://www.epimodels.org/midas/Rpubsyntdata1.do).  In particular, this is the 2010 Version 1 U.S. synthesized population of Arkansas.
 
 # simple consumer application
 
-The second application should consume the data provided by the other application, and do something interesting with it.  It should save the data in some sort of permanant data store (like a SQL DB), and display something.  (We'll leave the something up to you, but it could be a simple web application that displays the data in a table, or a force directed graph relating various entities together.  Use your imagination!)
+The second application should consume the data provided by the other application, and do something interesting with it.  We'll leave the something up to you, but it could be a simple web application that displays the data in a table, or a force directed graph relating various entities together.  Use your imagination!
 
 # need help?
 
