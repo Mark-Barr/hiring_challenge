@@ -1,7 +1,7 @@
-itsc_hiring_challange
+itsc_hiring_challenge
 ================
 
-This repository contains all of the information you should need to get started on our hiring challange.
+This repository contains all of the information you should need to get started on our hiring challenge.
 
 # goal
 
