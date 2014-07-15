@@ -7,7 +7,7 @@ Thanks for applying for our applications systems analyst/programmer position at 
 
 During this challenge, you will need to follow a few steps (specified in the 'getting started' section) to fork a repository, create a couple of simple programs, and answer some questions about what you did. The process shouldn’t take more than an hour or two to do. Remember, we want to see how you work through a problem. This doesn't have to be your magnum opus, or some sort of magical masterpiece. Have fun, and do something interesting! 
 
-Feel free to contact our Technical Lead, Josh Hanna (jhanna[at]uams.edu) if you have any questions or need guidance.
+Feel free to contact our Technical Lead, Josh Hanna (jhanna[at]uams.edu) if you have any questions or need guidance.  Also, this is 'open book', as it were.  Feel free to scour the any resources you have available to you, such as stack overflow or the greater internet.
 
 # getting started
 
