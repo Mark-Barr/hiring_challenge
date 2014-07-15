@@ -3,7 +3,7 @@ itsc_hiring_challenge
 
 # goal
 
-Thanks for applying for our applications systems analyst/programmer position at UAMS Biomedical Informatics. As part of our interview process, we created an application challenge. Its goal is for you to show us how you use your knowledge and resources to think through a problem. This repository contains all of the information you should need to get started. 
+Thanks for applying for our applications systems analyst/programmer position at UAMS Biomedical Informatics! As part of our interview process, we created an application challenge. Its goal is for you to show us how you use your knowledge and resources to think through a problem. This repository contains all of the information you should need to get started. 
 
 During this challenge, you will need to follow a few steps (specified in the 'getting started' section) to fork a repository, create a couple of simple programs, and answer some questions about what you did. The process shouldn’t take more than an hour or two to do. Remember, we want to see how you work through a problem. This doesn't have to be your magnum opus, or some sort of magical masterpiece. Have fun, and do something interesting! 
 
