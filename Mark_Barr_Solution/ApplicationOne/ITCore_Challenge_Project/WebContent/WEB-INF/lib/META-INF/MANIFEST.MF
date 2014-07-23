@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Created-By: 1.5.0_13 (Apple Computer, Inc.)
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Include-Resource: src/main/resources
+Bnd-LastModified: 1200035117869
+Export-Package: javax.servlet.http;specification-version=2.1;uses:=jav
+ ax.servlet,javax.servlet;specification-version=2.1
+Bundle-Version: 1.0.0
+Ignore-Package: javax.servlet.http,javax.servlet
+Bundle-Copyright: Copyright 1999,2005 The Apache Software Foundation
+Bundle-Name: Servlet 2.1 API
+Bundle-Description: Servlet 2.1 API
+Bundle-DocURL: http://www.apache.org/
+Bundle-Vendor: The Apache Software Foundation
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.apache.felix.javax.servlet
+Tool: Bnd-0.0.160
+Bundle-Category: servlet
+

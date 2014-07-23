@@ -1,0 +1,121 @@
+drop table schools;
+
+CREATE TABLE SCHOOLS
+(
+	sp_id int,
+	school_name VARCHAR(256),
+	stabbr VARCHAR(256),
+	address VARCHAR(256),
+	city VARCHAR(256),
+	county VARCHAR(256),
+	zipcode VARCHAR(256),
+	zip4 VARCHAR(256),
+	nces_id VARCHAR(256),
+	total INT,
+	prek INT,
+	kinder INT,
+	gr01_gr12 INT,
+	ungraded VARCHAR(256),
+	latitude FLOAT,
+	longitude FLOAT,
+	info_source VARCHAR(256),
+	stco INT
+);
+
+
+LOAD DATA LOCAL INFILE 'C:\\dev\\hiring_challenge-master\\data\\2010_ver1_05_schools.txt'
+INTO TABLE SCHOOLS
+FIELDS TERMINATED BY ','
+    ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(sp_id,school_name,stabbr,address,city,county,zipcode,zip4,nces_id,total,prek,kinder,gr01_gr12,ungraded,latitude,longitude,info_source,stco);
+
+commit;
+
+
+
+
+drop table SYNTH_HOUSEHOLDS;
+
+CREATE TABLE SYNTH_HOUSEHOLDS
+(
+	sp_id INT,
+	serialno BIGINT,
+	stcotrbg VARCHAR(256),
+	hh_race INT,
+	hh_income INT,
+	hh_size INT,
+	hh_age INT,
+	latitude FLOAT,
+	longitude FLOAT
+);
+
+LOAD DATA LOCAL INFILE 'C:\\dev\\hiring_challenge-master\\data\\2010_ver1_05_synth_households.txt’
+INTO TABLE SYNTH_HOUSEHOLDS
+FIELDS TERMINATED BY ','
+    ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(sp_id,serialno,stcotrbg,hh_race,hh_income,hh_size,hh_age,latitude,longitude);
+
+select * from SYNTH_HOUSEHOLDS;
+
+commit;
+
+
+
+
+drop table WORKPLACES;
+
+CREATE TABLE WORKPLACES
+(
+	sp_id INT,
+	workers INT,
+	latitude FLOAT,
+	longitude FLOAT,
+	PRIMARY KEY (sp_id)
+);
+
+LOAD DATA LOCAL INFILE 'C:\\dev\\hiring_challenge-master\\data\\2010_ver1_05_workplaces.txt'
+INTO TABLE WORKPLACES
+FIELDS TERMINATED BY ','
+    
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(sp_id, workers, latitude, longitude);
+
+commit;
+
+
+
+
+
+
+drop table SYNTH_PEOPLE;
+
+CREATE TABLE SYNTH_PEOPLE
+(
+	sp_id INT,
+	sp_hh_id INT NULL,
+	serialno BIGINT NULL,
+	stcotrbg VARCHAR(256) NULL,
+	age INT NULL,
+	sex INT NULL,
+	race INT NULL,
+	sporder INT NULL,
+	relate INT NULL,
+	sp_school_id VARCHAR(256) NULL,
+	sp_work_id VARCHAR(256) NULL,
+	PRIMARY KEY (sp_id)
+);
+
+LOAD DATA LOCAL INFILE 'C:\\dev\\hiring_challenge-master\\data\\2010_ver1_05_synth_people.txt'
+INTO TABLE SYNTH_PEOPLE
+FIELDS TERMINATED BY ','
+        ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(sp_id,sp_hh_id,serialno,stcotrbg,age,sex,race,sporder,relate,sp_school_id,sp_work_id);
+
+commit;

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itcoretest.dao.HouseholdDAO">
+
+
+    <resultMap id="result" type="Household">
+        <result property="spId" column="sp_id"/>
+        <result property="serialno" column="serialno"/>
+        <result property="stcotrbg" column="stcotrbg"/>
+        <result property="hh_race" column="hh_race"/>
+        <result property="hh_income" column="hh_income"/>
+        <result property="hh_size" column="hh_size"/>
+        <result property="hh_age" column="hh_age"/>
+        <result property="latitude" column="latitude"/>
+        <result property="longitude" column="longitude"/>
+    </resultMap>
+ 
+    <select id="getById" parameterType="int" resultMap="result">
+        SELECT * FROM SYNTH_HOUSEHOLDS WHERE SP_ID = #{sp_id}
+    </select>
+    
+    <select id="getAll" resultMap="result">
+    	SELECT * FROM SYNTH_HOUSEHOLDS LIMIT 1000
+    </select>
+    
+</mapper>

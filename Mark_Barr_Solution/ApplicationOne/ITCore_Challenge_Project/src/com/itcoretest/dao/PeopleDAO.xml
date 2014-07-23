@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itcoretest.dao.PeopleDAO">
+
+    <resultMap id="result" type="People">
+        <result property="spId" column="sp_id"/>
+        <result property="sp_hh_id" column="sp_hh_id"/>
+        <result property="serialno" column="serialno"/>
+        <result property="stcotrbg" column="stcotrbg"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+        <result property="race" column="race"/>
+        <result property="sporder" column="sporder"/>
+        <result property="relate" column="relate"/>
+        <result property="sp_school_id" column="sp_school_id"/>
+        <result property="sp_work_id" column="sp_work_id"/>
+    </resultMap>
+ 
+    <select id="getById" parameterType="int" resultMap="result">
+        SELECT * FROM SYNTH_PEOPLE WHERE SP_ID = #{sp_id}
+    </select>
+    
+    <select id="getAll" resultMap="result">
+    	SELECT * FROM SYNTH_PEOPLE LIMIT 1000
+    </select>
+    
+</mapper>

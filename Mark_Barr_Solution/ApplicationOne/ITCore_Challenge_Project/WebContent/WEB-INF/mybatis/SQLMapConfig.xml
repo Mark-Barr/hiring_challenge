@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+ 
+<configuration>
+ 
+    <typeAliases>
+        <typeAlias alias="School" type="com.itcoretest.model.School"/>
+        <typeAlias alias="People" type="com.itcoretest.model.People"/>
+        <typeAlias alias="Household" type="com.itcoretest.model.Household"/>
+        <typeAlias alias="Workplace" type="com.itcoretest.model.Workplace"/>
+    </typeAliases>
+ 
+	
+ 
+    <mappers>
+       <mapper resource="com/itcoretest/dao/SchoolDAO.xml"/>
+       <mapper resource="com/itcoretest/dao/PeopleDAO.xml"/>
+       <mapper resource="com/itcoretest/dao/HouseholdDAO.xml"/>
+       <mapper resource="com/itcoretest/dao/WorkplaceDAO.xml"/>
+    </mappers>
+ 
+</configuration>

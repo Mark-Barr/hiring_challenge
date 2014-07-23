@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itcoretest.dao.SchoolDAO">
+
+    <resultMap id="result" type="School">
+        <result property="spId" column="sp_id"/>
+        <result property="schoolName" column="school_name"/>
+        <result property="stAbbr" column="stabbr"/>
+        <result property="address" column="address"/>
+        <result property="city" column="city"/>
+        <result property="county" column="county"/>
+        <result property="zipcode" column="zipcode"/>
+        <result property="zip4" column="zip4"/>
+        <result property="ncesId" column="nces_id"/>
+        <result property="total" column="total"/>
+        <result property="prek" column="prek"/>
+        <result property="kinder" column="kinder"/>
+        <result property="gr01Gr12" column="gro1_gr12"/>
+        <result property="ungraded" column="ungraded"/>
+        <result property="latitude" column="latitude"/>
+        <result property="longitude" column="longitude"/>
+        <result property="infoSource" column="info_source"/>
+        <result property="stco" column="stco"/>
+                
+    </resultMap>
+ 
+    <select id="getById" parameterType="int" resultMap="result">
+        SELECT * FROM SCHOOLS WHERE SP_ID = #{sp_id}
+    </select>
+    
+    <select id="getAll" resultMap="result">
+    	SELECT * FROM SCHOOLS
+    </select>
+    
+    <select id="findByName" parameterType="String" resultMap="result">
+        SELECT * FROM SCHOOLS WHERE SCHOOL_NAME LIKE #{schoolName} 
+    </select>
+    
+</mapper>

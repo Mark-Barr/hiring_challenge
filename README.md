@@ -32,8 +32,41 @@ The second application should consume the data provided by the other application
 Finally, I'd like you to answer a few questions.  Edit this readme in your forked repository and put the answers inline below.
 
 1. Why did you chose the technology stack you chose (language, data store, etc)?
+
+>> I chose to solve the problem using Java with a Spring MVC framework, an iBatis persistence layer, and a MySQL db. I mostly chose this
+>> technology stack because I was familiar with these technologies. Given the short timeframe to complete the task, I needed to get 
+>> something done quickly, so going with the familiar seemed an easy decision.
+
 2. Did you seriously consider another stack?  If so, roughly how would it have worked?  If not, why not?
+
+>> I didn't, again, mostly because of the time constraint. If I were given a longer period of time, I might have looked into a Ruby on Rails approach.
+>> For application two, I took a stab at building a web page using jquery's ajax xml reading function. I'm less familiar with this technology, however,
+>> and when I ran into some issues, I decided to go with the Java command line app solution.
+
 3. Suppose for a second the toy application you've built needed to scale up.  What might you change to accommodate a huge influx of users?  What about a significantly larger amount of data?
+
+>> The Java/Spring framework I've used should be able to scale up nicely. It is commonly used in enterprise solutions. What is currently lacking
+>> from my solution, though, is a paging mechanism. For the purposes of this example application, I capped the number of rows that could be
+>> pulled back when querying the database on the larger of the datasets, but if I were to work on this project again, I would definitely 
+>> implement some sort of paging mechanism.
+
 4. Finally, I'd like to test your Google skills.  What's the idiomatic way to slurp in file contents in Haskell?  What about Golang?
+
+>> so, some quick Googling shows the 'getContent' operation is the Haskell method for reading a file, and Golang, file slurping can be accomplished
+>> with the function 'ReadFile(filename string) ([]byte, error)'. Not sure if these are the 'idiomatic' responses you are looking for, but they should
+>> get the job done.
+
+NOTE: I've included additional READMEs under each of the application directories with notes specific to those tasks.
+
+Thanks for this opportunity to work on this challenge.
+
+Best,
+Mark Barr
+
+
+
+
+
+
 
 
